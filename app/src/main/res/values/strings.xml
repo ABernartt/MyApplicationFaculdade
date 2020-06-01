@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="prodSKU">Produto SKU: %1s</string>
+    <string name="prodNome">Nome do Produto: %1s</string>
+    <string name="prodPreco">Preço do Produto: R$ %1s</string>
+    <string name="tituloUm">Implementação Um</string>
+    <string name="tituloDois">Implementação Dois</string>
+    <string name="descUm">Apenas Database Externa</string>
+    <string name="descDois">Database Externa + Database Local</string>
+    <string name="chamadas">Chamadas à Database: %1s</string>
+</resources>

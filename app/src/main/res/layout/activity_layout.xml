@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    tools:context=".implementacaoDois.ImplementacaoDoisActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#050505"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titulo"/>
+
+    <TextView
+        android:layout_below="@id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/implementacaoDesc"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerField"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prodSKU"
+            android:id="@+id/prodSKU"
+            android:textSize="20sp"
+            android:textColor="#8411CC"
+            />
+
+        <TextView
+            android:textColor="#8411CC"
+            android:layout_below="@id/prodSKU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prodNome"
+            android:id="@+id/prodNome"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:textColor="#8411CC"
+            android:layout_below="@id/prodNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prodPreco"
+            android:id="@+id/prodPreco"
+            android:textSize="20sp"
+            />
+
+        <TextView
+
+            android:textColor="#8411CC"
+            android:layout_below="@id/prodPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chamadas"
+            android:id="@+id/chamadas"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerField"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atualizar Produto"
+            android:id="@+id/updateString"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/updateString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atualizar SKU"
+            android:id="@+id/updateSku"
+            android:textSize="20sp"
+
+            />
+        <EditText
+            android:layout_below="@id/updateSku"
+            android:id="@+id/editSKU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextstyle"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atualizar Nome"
+            android:id="@+id/updateNome"
+            android:textSize="20sp"
+            android:layout_below="@id/editSKU"
+            />
+        <EditText
+            android:layout_below="@id/updateNome"
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextstyle"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atualizar Preço"
+            android:id="@+id/updatePreco"
+            android:textSize="20sp"
+            android:layout_below="@id/editNome"
+            />
+        <EditText
+            android:layout_below="@id/updatePreco"
+            android:id="@+id/editPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextstyle"
+            android:inputType="numberDecimal"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/saveData"
+        android:layout_below="@id/centerField"
+        android:layout_centerHorizontal="true"
+        android:text="Atualizar Produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
